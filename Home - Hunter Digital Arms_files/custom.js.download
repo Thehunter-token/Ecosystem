@@ -1,0 +1,126 @@
+jQuery(document).ready(function() {
+    jQuery("#product_slider").owlCarousel({
+        loop:true,
+        centerMode: true,
+        slidesToShow: 3,
+        centerPadding: '60px',
+        nav:true,
+        dots:true,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
+    });
+    // jQuery("#product_slider2").owlCarousel({
+    //     loop:true,
+    //     // margin:20,
+    //     nav:true,
+    //     dots:true,
+    //     responsive:{
+    //         0:{
+    //             items:1
+    //         },
+    //         600:{
+    //             items:1
+    //         },
+    //         768:{
+    //             items:2
+    //         },
+    //         991:{
+    //             items:3
+    //         }, 
+    //         1200:{
+    //             items:4
+    //         }
+    //     }
+    // });
+    jQuery(".owl_custom-prev").click( function(){
+        jQuery("#product_slider .owl-nav .owl-prev").trigger("click");
+        // jQuery("#product_slider2 .owl-nav .owl-prev").trigger("click");
+    });
+    jQuery(".owl_custom-next").click( function(){
+        jQuery("#product_slider .owl-nav .owl-next").trigger("click");
+        // jQuery("#product_slider2 .owl-nav .owl-next").trigger("click");
+    });
+
+    jQuery('.brands-carousel').owlCarousel({
+        loop: false,
+        margin: 30,
+        dots: false,
+        nav: false,
+        items: 3,
+        center: true,
+        responsive: {
+            0: {
+            items: 1
+            },
+
+            480: {
+            items: 2
+            },
+            767: {
+            items: 3
+            },
+        }    
+    });
+});
+jQuery(document).ready(function(){
+    jQuery(".roadmap-box").css("margin-bottom", "-3px");
+  });
+
+  jQuery(document).ready(function(){
+    // jQuery(function(){
+    //     var inputs = jQuery('.input');
+    //     var paras = jQuery('.description-flex-container').find('.box_pop');
+    //     console.log(paras);
+    //     inputs.click(function(){
+    //         jQuery('.input').removeClass('visited');
+    //         var t = jQuery(this),
+    //                 ind = t.index(),
+    //                 matchedPara = paras.eq(ind);
+                    
+    //         let divIndex =  t.index();
+            
+    //         for(var i = 1; i <= divIndex; i++)
+    //         {
+    //             jQuery('.input:nth-child('+i+')').addClass('visited');
+    //         }         
+    //         t.add(matchedPara).addClass('active');
+    //         inputs.not(t).add(paras.not(matchedPara)).removeClass('active');
+    //     });
+    // });
+    // jQuery(".close_btn").click(function(){
+    //     jQuery(".box_pop").removeClass("active");
+    //     jQuery("html").removeClass("overlay");
+    // });
+    // jQuery(".input").click(function(){
+    //     jQuery("html").addClass("overlay");
+    // });
+
+    jQuery('.announcements-items').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        adaptiveHeight: true,
+        cssEase: 'linear'
+      });
+});
+jQuery(document).ready(function(){
+    jQuery('#menu-item-1183 .dropdown-item').attr('target', '_blank');
+  });
